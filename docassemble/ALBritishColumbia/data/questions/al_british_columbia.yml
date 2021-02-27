@@ -1,0 +1,14 @@
+objects from file:
+  - court_registries: court_registries.yml
+---
+code: |
+  # Sometimes we have values that can be set from interview_metadata.
+  # They don't always work, but interview author can override.
+  
+  # Some interviews have multiple interview_metadata keys. Look in the 1st one
+  first_form_key = next(iter(interview_metadata),'')
+  if isinstance(interview_metadata.get(first_form_key,{}), dict):
+    first_form = interview_metadata.get(first_form_key,{})
+  else:
+    first_form = {}
+  del(first_form_key)
