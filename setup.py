@@ -42,19 +42,19 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
                 out.setdefault(package, []).append(prefix+name)
     return out
 
-setup(name='docassemble.ALMassachusetts',
-      version='0.0.4',
-      description=('A docassemble extension of the AssemblyLine project that provides a foundation of Massachusetts-specific data, functionality, and questions.'),
-      long_description='# docassemble.ALMassachusetts\r\n\r\nA docassemble extension of the AssemblyLine project that provides a foundation of Massachusetts-specific data, functionality, and questions.\r\n\r\n## Author\r\n\r\nSuffolk Law School Legal Innovation and Technology Lab\r\n',
+setup(name='docassemble.ALBritishColumbia',
+      version='0.0.1',
+      description=('A docassemble extension of the AssemblyLine project that provides a foundation of British Columbia-specific data, functionality, and questions.'),
+      long_description='# docassemble.ALBritishColumbia\r\n\r\nA docassemble extension of the AssemblyLine project that provides a foundation of British Columbia-specific data, functionality, and questions.\r\n\r\n',
       long_description_content_type='text/markdown',
-      author='AssemblyLine Team',
-      author_email='ALTeam@example.com',
+      author="William O'Hanley",
+      author_email='me@wohanley.com',
       license='The MIT License (MIT)',
       url='https://docassemble.org',
       packages=find_packages(),
       namespace_packages=['docassemble'],
       install_requires=[],
       zip_safe=False,
-      package_data=find_package_data(where='docassemble/ALMassachusetts/', package='docassemble.ALMassachusetts'),
+      package_data=find_package_data(where='docassemble/ALBritishColumbia/', package='docassemble.ALBritishColumbia'),
      )
 
